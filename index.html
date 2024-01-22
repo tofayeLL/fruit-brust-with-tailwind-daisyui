@@ -1,19 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <!-- Tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- set favicon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
+
+<body class="font-lato">
+    <header class="container mx-auto lg:px-24 px-2 ">
+        <!-- nav section -->
+        <nav class="border-4 border-green-400 ">
+            <div class="navbar lg:bg-red-400 rounded-full ">
+                <!-- nav start responsive nav -->
+                <div class="navbar-start">
+                    <div class="dropdown ">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <!-- nav start for lg -->
+                    <div class="text-white hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                        
+                        
+
+                    </div>
+                </div>
+                <!-- nav middle for lg -->
+                <div class="navbar-center  lg:flex lg:justify-center lg:items-center space-x-1 lg:space-x-3  translate-x-[100%] lg:translate-x-0">
+                    <img src="images/logo.png" alt="" class="w-[20%]">
+                    <h3 class="text-sm lg:text-3xl font-bold text-black lg:text-white">Fruit Burst</h3>
+                    
+                    
+                </div>
+                <!-- nav end for lg -->
+                <div class="navbar-end">
+                    <div class="bg-white hidden lg:flex justify-between items-center px-8 py-1 rounded-full">
+                        <input type="text" placeholder="Search here" class="input w-full max-w-xs" />
+                    <img src="images/seach icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- banner section -->
+        <div class="my-24">
+            <!-- carousel -->
+            <div class="carousel w-full">
+
+                <!-- slider 1 -->
+                <div id="slide1" class="carousel-item relative w-full rounded-lg bg-cover bg-center h-[70vh] px-0 py-20 lg:py-8" style="background-image: linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./images/banner1.png');">
+                    <!-- text content -->
+                    <div class="lg:w-[70%] mx-auto text-center flex flex-col justify-center items-center space-y-4 lg:space-y-6 ">
+                        <h3 class="text-white text-3xl lg:text-5xl font-bold">Exotic tastes at your <br> doorstep</h3>
+                        <p class="text-white text-sm font-normal">We supply highly quality organic products</p>
+                        <button class="btn  lg:hover:text-red-500 bg-red-400 text-white border-none">Shop Now</button>   
+                    </div>
+
+                    <!-- hot deal content -->
+                    <div class="bg-red-400 h-16 w-16 lg:h-20 lg:w-20 flex items-center justify-center text-white font-bold rounded-full absolute top-[5%] right-[5%] px-2 py-2">
+                        <p class="text-center text-xs">Hot Deal <br> 50% Off</p>
+                    </div>
+                    
+                    <!-- slider button content -->
+                  <div class="absolute flex justify-between transform -translate-y-1/2  right-0 bottom-0 left-0 px-8">
+                    <a href="#slide4" class="btn btn-circle text-white hover:bg-red-400 hover:text-black bg-red-400 border-none">❮</a> 
+                    <a href="#slide2" class="btn btn-circle  text-white hover:bg-red-400 hover:text-black bg-red-400 border-none">❯</a>
+                  </div>
+
+                </div> 
+             
+
+
+                <!-- slider 2 -->
+                <div id="slide2" class="carousel-item relative w-full rounded-lg bg-cover bg-center h-[70vh] px-0 py-20 lg:py-8" style="background-image: linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./images/banner2.png');">
+                    <!-- text content -->
+                    <div class="lg:w-[70%] mx-auto text-center flex flex-col justify-center items-center space-y-4 lg:space-y-6 ">
+                        <h3 class="text-white text-3xl lg:text-5xl font-bold">Exotic tastes at your <br> doorstep</h3>
+                        <p class="text-white text-sm font-normal">We supply highly quality organic products</p>
+                        <button class="btn lg:hover:text-red-500 bg-red-400 text-white border-none">Shop Now</button>   
+                    </div>
+
+                    <!-- hot deal content -->
+                    <div class="bg-red-400 h-16 w-16 lg:h-20 lg:w-20 flex items-center justify-center text-white font-bold rounded-full absolute top-[5%] right-[5%] px-2 py-2">
+                        <p class="text-center text-xs">Hot Deal <br> 50% Off</p>
+                    </div>
+
+                  <!-- slider button content -->
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle  text-white hover:bg-red-400 hover:text-black bg-red-400 border-none">❮</a> 
+                    <a href="#slide3" class="btn btn-circle  text-white hover:bg-red-400 hover:text-black bg-red-400 border-none">❯</a>
+                  </div>
+                </div> 
+
+               <!-- slider 3 -->
+               <div id="slide3" class="carousel-item relative w-full rounded-lg bg-cover bg-center h-[70vh] px-0 py-20 lg:py-8" style="background-image: linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./images/banner3.png');">
+                <!-- text content -->
+                <div class="lg:w-[70%] mx-auto text-center flex flex-col justify-center items-center space-y-4 lg:space-y-6 ">
+                    <h3 class="text-white text-3xl lg:text-5xl font-bold">Exotic tastes at your <br> doorstep</h3>
+                    <p class="text-white text-sm font-normal">We supply highly quality organic products</p>
+                    <button class="btn lg:hover:text-red-500 bg-red-400 text-white border-none">Shop Now</button>   
+                </div>
+
+                <!-- hot deal content -->
+                <div class="bg-red-400 h-16 w-16 lg:h-20 lg:w-20 flex items-center justify-center text-white font-bold rounded-full absolute top-[5%] right-[5%] px-2 py-2">
+                    <p class="text-center text-xs">Hot Deal <br> 50% Off</p>
+                </div>
+
+                 <!-- slider button content -->
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle  text-white hover:bg-red-400 hover:text-black bg-red-400 border-none">❮</a> 
+                    <a href="#slide4" class="btn btn-circle  text-white hover:bg-red-400 hover:text-black bg-red-400 border-none">❯</a>
+                  </div>
+                </div> 
+
+               <!-- slider 4 -->
+               <div id="slide4" class="carousel-item relative w-full rounded-lg bg-cover bg-center h-[70vh] px-0 py-20 lg:py-8" style="background-image: linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./images/banner4.png');">
+                <!-- text content -->
+                <div class="lg:w-[70%] mx-auto text-center flex flex-col justify-center items-center space-y-4 lg:space-y-6 ">
+                    <h3 class="text-white text-3xl lg:text-5xl font-bold">Exotic tastes at your <br> doorstep</h3>
+                    <p class="text-white text-sm font-normal">We supply highly quality organic products</p>
+                    <button class="btn lg:hover:text-red-500 bg-red-400 text-white border-none">Shop Now</button>   
+                </div>
+
+                <!-- hot deal content -->
+                <div class="bg-red-400 h-16 w-16 lg:h-20 lg:w-20 flex items-center justify-center text-white font-bold rounded-full absolute top-[5%] right-[5%] px-2 py-2">
+                    <p class="text-center text-xs">Hot Deal <br> 50% Off</p>
+                </div>
+
+                  <!-- slider button content -->
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle  text-white hover:bg-red-400 hover:text-black bg-red-400 border-none">❮</a> 
+                    <a href="#slide1" class="btn btn-circle  text-white hover:bg-red-400 hover:text-black bg-red-400 border-none">❯</a>
+                  </div>
+                </div>
+              </div>
+
+
+                 <!-- fruit badges content -->
+                <div class="bg-[#FFF] w-[80%] hover:bg-red-400 hover:text-white rounded-lg mx-auto px-2 py-10 hidden lg:flex justify-around items-center -translate-y-24">
+                  
+                    <div>
+                        <img src="images/fruit1.png" alt="">
+                        <p class="text-center">grape</p>
+                    </div>
+                    <div>
+                        <img src="images/fruit2.png" alt="">
+                        <p class="text-center">Orange</p>
+                    </div>
+                    <div>
+                        <img src="images/fruit3.png" alt="">
+                        <p class="text-center">mango</p>
+                    </div>
+                    <div>
+                        <img src="images/fruit4.png" alt="">
+                        <p class="text-center">Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="images/fruit5.png" alt="">
+                        <p class="text-center">mango</p>
+                    </div>
+                    
+                  
+
+                    
+                </div>
+              
+        </div>
 
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
