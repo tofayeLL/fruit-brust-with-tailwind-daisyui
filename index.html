@@ -22,7 +22,7 @@
 </head>
 
 <body class="font-lato">
-    <header class="container mx-auto lg:px-24 px-2 ">
+    <header class="container mx-auto lg:px-24 px-4 ">
         <!-- nav section -->
         <nav class="border-4 border-green-400 ">
             <div class="navbar lg:bg-red-400 rounded-full ">
@@ -81,7 +81,7 @@
             <div class="carousel w-full">
 
                 <!-- slider 1 -->
-                <div id="slide1" class="carousel-item relative w-full rounded-lg bg-cover bg-center h-[70vh] px-0 py-20 lg:py-8" style="background-image: linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./images/banner1.png');">
+                <div id="slide1" class="carousel-item relative w-full rounded-lg bg-cover bg-center h-[70vh] px-0 py-8" style="background-image: linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./images/banner1.png');">
                     <!-- text content -->
                     <div class="lg:w-[70%] mx-auto text-center flex flex-col justify-center items-center space-y-4 lg:space-y-6 ">
                         <h3 class="text-white text-3xl lg:text-5xl font-bold">Exotic tastes at your <br> doorstep</h3>
@@ -105,7 +105,7 @@
 
 
                 <!-- slider 2 -->
-                <div id="slide2" class="carousel-item relative w-full rounded-lg bg-cover bg-center h-[70vh] px-0 py-20 lg:py-8" style="background-image: linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./images/banner2.png');">
+                <div id="slide2" class="carousel-item relative w-full rounded-lg bg-cover bg-center h-[70vh] px-0 py-8" style="background-image: linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./images/banner2.png');">
                     <!-- text content -->
                     <div class="lg:w-[70%] mx-auto text-center flex flex-col justify-center items-center space-y-4 lg:space-y-6 ">
                         <h3 class="text-white text-3xl lg:text-5xl font-bold">Exotic tastes at your <br> doorstep</h3>
@@ -126,7 +126,7 @@
                 </div> 
 
                <!-- slider 3 -->
-               <div id="slide3" class="carousel-item relative w-full rounded-lg bg-cover bg-center h-[70vh] px-0 py-20 lg:py-8" style="background-image: linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./images/banner3.png');">
+               <div id="slide3" class="carousel-item relative w-full rounded-lg bg-cover bg-center h-[70vh] px-0 py-8" style="background-image: linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./images/banner3.png');">
                 <!-- text content -->
                 <div class="lg:w-[70%] mx-auto text-center flex flex-col justify-center items-center space-y-4 lg:space-y-6 ">
                     <h3 class="text-white text-3xl lg:text-5xl font-bold">Exotic tastes at your <br> doorstep</h3>
@@ -147,7 +147,7 @@
                 </div> 
 
                <!-- slider 4 -->
-               <div id="slide4" class="carousel-item relative w-full rounded-lg bg-cover bg-center h-[70vh] px-0 py-20 lg:py-8" style="background-image: linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./images/banner4.png');">
+               <div id="slide4" class="carousel-item relative w-full rounded-lg bg-cover bg-center h-[70vh] px-0 py-8" style="background-image: linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./images/banner4.png');">
                 <!-- text content -->
                 <div class="lg:w-[70%] mx-auto text-center flex flex-col justify-center items-center space-y-4 lg:space-y-6 ">
                     <h3 class="text-white text-3xl lg:text-5xl font-bold">Exotic tastes at your <br> doorstep</h3>
@@ -200,8 +200,55 @@
               
         </div>
 
+       
+
     </header>
-    <main>
+    <main class="container mx-auto lg:px-24 px-4 border-4 border-red-600 ">
+         <!-- section deal of the day section -->
+         <section class=" my-24 flex gap-6 flex-col text-center lg:text-left lg:flex-row justify-between items-center border-4 border-green-500">
+            <!-- text container -->
+            <div class="space-y-5 lg:w-[54%]">
+                <h3 class="text-3xl lg:text-5xl font-bold">Deal of the day</h3>
+                <p class="text-sm font-normal">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+            </div>
+
+            <!-- countdown or time content -->
+            <div>
+
+                <div class="grid grid-flow-col gap-3  lg:gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div> 
+                    <div class="flex justify-center text-5xl">:</div>
+                    <div class="flex flex-col">                 
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <div class="flex justify-center text-5xl">:</div>
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div> 
+                    <div class="flex justify-center text-5xl">:</div>
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:51;"></span>
+                      </span>
+                      sec
+                    </div>
+                  </div>
+
+            </div>
+            
+         </section>
 
     </main>
     <footer>
